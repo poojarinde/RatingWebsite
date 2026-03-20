@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>🎬 MovieZone</h2>
+
+  <ul class="nav-links">
+    <li onclick="scrollToSection('movies')">Movies</li>
+    <li onclick="scrollToSection('review')">Review</li>
+    <li>About</li>
+  </ul>
+
+  <input type="text" id="search" placeholder="Search movies...">
+</nav>
+
+<!-- MOVIES -->
+<section id="movies">
+  <div class="container" id="movieContainer"></div>
+</section>
+
+<!-- REVIEW FORM -->
+<section id="review" class="review-section">
+  <h2>⭐ Submit Your Review</h2>
+
+  <form id="reviewForm">
+    <input type="text" placeholder="Your Name" required>
+
+    <select required>
+      <option value="">Select Movie</option>
+      <option>Inception</option>
+      <option>Avengers</option>
+      <option>Interstellar</option>
+      <option>Joker</option>
+      <option>Titanic</option>
+      <option>Avatar</option>
+      <option>Batman</option>
+      <option>Frozen</option>
+      <option>Spider-Man</option>
+    </select>
+
+    <select required>
+      <option value="">Rating</option>
+      <option>1 ⭐</option>
+      <option>2 ⭐</option>
+      <option>3 ⭐</option>
+      <option>4 ⭐</option>
+      <option>5 ⭐</option>
+    </select>
+
+    <textarea placeholder="Write your review..." required></textarea>
+
+    <button type="submit">Submit Review</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
